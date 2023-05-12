@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu:23.04
+    runs-on: self-hosted
     container:
       image: ubuntu:23.04
       volumes:
