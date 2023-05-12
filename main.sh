@@ -7,11 +7,11 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
 apt install -y rpm
-wget https://dl.fedoraproject.org/pub/fedora/linux/releases/38/Everything/x86_64/os/Packages/g/gnome-shell-extension-launch-new-instance-44.0-1.fc38.noarch.rpm
-mkdir -p ./gnome-shell-extension-launch-new-instance
-cp -rvf ./debian ./gnome-shell-extension-launch-new-instance/
-cd ./gnome-shell-extension-launch-new-instance
-rpm2cpio ../gnome-shell-extension-launch-new-instance-44.0-1.fc38.noarch.rpm | cpio -idmv
+wget https://dl.fedoraproject.org/pub/fedora/linux/releases/38/Everything/x86_64/os/Packages/g/gnome-shell-extension-places-menu-44.0-1.fc38.noarch.rpm
+mkdir -p ./gnome-shell-extension-places-menu
+cp -rvf ./debian ./gnome-shell-extension-places-menu/
+cd ./gnome-shell-extension-places-menu
+rpm2cpio ../gnome-shell-extension-places-menu-44.0-1.fc38.noarch.rpm | cpio -idmv
 
 # Get build deps
 ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
