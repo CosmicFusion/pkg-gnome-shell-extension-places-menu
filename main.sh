@@ -2,11 +2,11 @@ DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
 apt install -y rpm
-wget https://dl.fedoraproject.org/pub/fedora/linux/releases/38/Everything/x86_64/os/Packages/g/gnome-shell-extension-places-menu-44.0-1.fc38.noarch.rpm
+wget https://rpmfind.net/linux/fedora/linux/updates/testing/39/Everything/x86_64/Packages/g/gnome-shell-extension-places-menu-45.0-1.fc39.noarch.rpm
 mkdir -p ./gnome-shell-extension-places-menu
 cp -rvf ./debian ./gnome-shell-extension-places-menu/
 cd ./gnome-shell-extension-places-menu
-rpm2cpio ../gnome-shell-extension-places-menu-44.0-1.fc38.noarch.rpm | cpio -idmv
+rpm2cpio ../gnome-shell-extension-places-menu-45.0-1.fc39.noarch.rpm | cpio -idmv
 
 # Get build deps
 apt-get build-dep ./ -y
